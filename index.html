@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee House </title>
+</head>
+<body>
+    <nav>
+      <ul>
+        <li class="hideOnemobile">
+            <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+           </a>
+           <a href="#">
+            <p>We are Here</p>
+            <p>5 DUCE , 75015 Paris</p>
+           </a>
+        </li>
+        <li>
+            <div class="navbar-logo">
+            <img src="image/Caffee-logo.png" alt="logo">
+            </div>
+            <a href="#" class="logo-name">MS COFFEE</a>
+        </li>
+        <li class="hideOnetablet">
+            <a href="#">
+                <p>Working Time</p>
+                <p>Mon - Fer , 9:00 Am - 10:30 Pm</p>
+               </a>
+            <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg>
+             </a>
+        </li>
+        <li class="menu-bottun" onclick=showSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#dfd6d0"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+      <div class="nav-divide"></div>
+      <ul class="coffee__sidebar">
+        <div class="coffee__sidebar-icons">
+            <li class="showOnesmallscreens"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>
+            <li class="showOnesmallscreens"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a></li>
+            <li><a href="#"><svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#dfd6d0"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        </div>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">COFFEE</a></li>
+        <li><a href="#">PRODUCTION</a></li>
+        <li><a href="#">BREAKFAST</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <div class="showOnesmallscreens">
+              <button type='button'   >
+                Book A Table 
+            </button>
+        </div>
+      </ul>
+      <ul class="hideOnesmallscreens">
+        <li class="hideOnetablet"><a href="#">HOME</a></li>
+        <li class="hideOnetablet"><a href="#">COFFEE</a></li>
+        <li class="hideOnetablet"><a href="#">PRODUCTION</a></li>
+        <li class="hideOnetablet"><a href="#">BREAKFAST</a></li>
+        <li class="hideOnetablet"><a href="#">SHOP</a></li>
+        <li class="hideOnetablet"><a href="#">ABOUT US</a></li>
+        <li class="hideOnetablet"><a href="#">CONTACT</a></li>
+        <div class="navbar-icons">
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg></a></li>
+            <button type='button' >
+                Book A Table 
+            </button>
+          
+        </div>
+      </ul>
+    </nav>
+    <header>
+        <div class="coffee__header-cover">
+            <img src="image/coffee 5.jpg" alt="header-cover">
+        </div>
+        <div class="coffee__header-container">
+            <div class="coffee__header-container__logo">
+                <img src="image/Caffee-logo.png" alt="logo">
+            </div>
+            <div class="coffee__header-container__content">
+                <h1>Welcome to MS Coffee !</h1>
+                <p>We serve the richest coffee in the city !</p>
+                <button type='button' >
+                    Book A Table 
+                </button>
+            </div>
+            
+        </div>
+    </header>
+    <div class="coffee__menu ">
+       <div class="coffee__menu-grid">
+        <div class="coffee__menu-container">
+            <div class="coffee__menu-container__cover">
+                <img src="image/coffee 7.png" alt="">
+            </div>
+            <h3>Black coffee</h3>
+            <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit.</p>
+            <h4>DISCOVER MORE </h4>
+        </div>
+        <div class="coffee__menu-container">
+            <div class="coffee__menu-container__cover">
+                <img src="image//coffee 6.png" alt="">
+            </div>
+            <h3>Cold Drink</h3>
+            <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit.</p>
+            <h4>DISCOVER MORE </h4>
+        </div>
+        <div class="coffee__menu-container">
+            <div class="coffee__menu-container__cover">
+                <img src="image/coffee 8.png" alt="">
+            </div>
+            <h3>Cup Coffee</h3>
+            <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit.</p>
+            <h4>DISCOVER MORE </h4>
+        </div>
+       </div>
+    </div>
+    <div class="coffee__moments-section section__pedding">
+       
+    <div class="coffee__moments ">
+        <div class="coffee__moments__logo">
+            <img src="image/Caffee-logo 7.png" alt="">
+        </div>
+        <div class="coffee__moments-cover">
+            <div class="coffee__moments-cover__pic">
+                <img src="image/coffee 13.jpg" alt="pic">
+            </div>
+            <div class="coffee__moments-cover__container">
+                <h1>Coffee Moments</h1>
+                <p>Every 10 Coffee is Free</p>
+                <button type='button' >
+                    Get Free Coffee
+                </button>
+            </div>
+        </div>
+        <div class="coffee__moments-container">
+            <div class="coffee__moments-container__header">
+                <h3>Some Benefits</h3>
+                <h1>Only Quality Coffee Beans</h1>
+            </div>
+            <div class="coffee__moments-container__content">
+                <div class="coffee__moments-container__content-container">
+                    <div class="coffee__moments-container__content-container__logo">
+                        <img src="image/coffee 11.png" alt="lo-go">
+                    </div>
+                    <div class="coffee__moments-container__content-container__content">
+                        <h3>Great Coffee Beans</h3>
+                        <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc  .</p>
+
+                    </div>
+                </div>
+
+                <div class="coffee__moments-container__content-container">
+                    <div class="coffee__moments-container__content-container__logo">
+                        <img src="image/coffee 10.png" alt="lo-go">
+                    </div>
+                    <div class="coffee__moments-container__content-container__content">
+                        <h3>Best Coffee Flares</h3>
+                        <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc  .</p>
+
+                    </div>
+                </div>
+
+                <div class="coffee__moments-container__content-container">
+                    <div class="coffee__moments-container__content-container__logo">
+                        <img src="image/coffee 9.png" alt="lo-go">
+                    </div>
+                    <div class="coffee__moments-container__content-container__content">
+                        <h3>Incredible Coffee Menu</h3>
+                        <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc  .</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="coffee__moments-brands">
+        <div>
+            <img src="image/Caffee-logo.png" alt=''/>
+          </div>
+          <div>
+            <img src="image/Caffee-logo 2.png" alt=''/>
+          </div>
+          <div>
+            <img src="image/Caffee-logo 3.png" alt=''/>
+          </div>
+          <div>
+            <img src="image/Caffee-logo 4.png" alt=''/>
+          </div>
+          <div>
+            <img src="image/Caffee-logo 5.png" alt=''/>
+          </div>
+      </div>
+      <div class="coffee__moments-line"></div>
+   </div>
+   <div class="coffee__weekend__offers">
+            <div class="coffee__weekend__offers-header">
+                <div class="coffee__weekend__offers-logo">
+                    <img src="image/Caffee-logo 6.png" alt="">
+                </div>
+                <div class="coffee__weekend__offers-logo-2">
+                    <img src="image/Caffee-logo 7.png" alt="">
+                </div>
+                <div class="coffee__weekend__offers-header__titles">
+                    <h1>Buy One Get Tow! <span>Only This Weekends!</span> </h1>
+                    <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc !</p>
+                </div>
+                <button type='button' >
+                    DISCOVER MORE
+                </button>
+            </div>
+           <div class="coffee__weekend__offers-container">
+                    <div class="coffee__weekend__offers-container__items">
+                        <div class="coffee__weekend__offers-container__items-cover">
+                            <img src="image/coffee 16.jpg" alt="cover-item">
+                        </div>
+                        <div class="coffee__weekend__offers-container__items-content">
+                            <h3>Coffee of the Day</h3>
+                            <p>Food + Recipes</p>
+                        </div>
+                    </div>
+                    <div class="coffee__weekend__offers-container__items">
+                        <div class="coffee__weekend__offers-container__items-cover">
+                            <img src="image/coffee 24.jpg" alt="cover-item">
+                        </div>
+                        <div class="coffee__weekend__offers-container__items-content">
+                            <h3>Coffee of the Day</h3>
+                            <p>Food + Recipes</p>
+                        </div>
+                    </div>
+                    <div class="coffee__weekend__offers-container__items">
+                        <div class="coffee__weekend__offers-container__items-cover">
+                            <img src="image/coffee 15.jpg" alt="cover-item">
+                        </div>
+                        <div class="coffee__weekend__offers-container__items-content">
+                            <h3>Coffee of the Day</h3>
+                            <p>Food + Recipes</p>
+                        </div>
+                    </div>
+                    <div class="coffee__weekend__offers-container__items">
+                        <div class="coffee__weekend__offers-container__items-cover">
+                            <img src="image/coffee 2.jpg" alt="cover-item">
+                        </div>
+                        <div class="coffee__weekend__offers-container__items-content">
+                            <h3>Coffee of the Day</h3>
+                            <p>Food + Recipes</p>
+                        </div>
+                    </div>
+                    <div class="coffee__weekend__offers-container__items">
+                        <div class="coffee__weekend__offers-container__items-cover">
+                            <img src="image/coffee 14.jpg" alt="cover-item">
+                        </div>
+                        <div class="coffee__weekend__offers-container__items-content">
+                            <h3>Coffee of the Day</h3>
+                            <p>Food + Recipes</p>
+                        </div>
+                    </div>
+                    <div class="coffee__weekend__offers-container__items">
+                        <div class="coffee__weekend__offers-container__items-cover">
+                            <img src="image/coffee 17.jpg" alt="cover-item">
+                        </div>
+                        <div class="coffee__weekend__offers-container__items-content">
+                            <h3>Coffee of the Day</h3>
+                            <p>Food + Recipes</p>
+                        </div>
+                    </div>
+           </div>
+        </div>
+        <div class="coffee__perfect_coffee-section section__pedding">
+            <div class="coffee__perfect_coffee">
+                <div class="coffee__perfect_coffee-header">
+                    <h3>From Our Menu</h3>
+                    <h1>Choose Your Perfect Coffee</h1>
+                </div>
+                <div class="coffee__perfect_coffee-container">
+                    <div class="coffee__perfect_coffee-container__cover">
+                        <img src="image/coffee 19.jpg" alt="">
+                    </div>
+                    <div class="coffee__perfect_coffee-container__content">
+                        <div class="coffee__perfect_coffee-container__content-mune">
+                            <div class="coffee__perfect_coffee-container__content-mune__title">
+                                <h3>Espresso</h3>
+                                <h5>1 shot</h5>
+                            </div>
+                            <p>S2</p>
+                        </div>
+                        <div class="coffee__perfect_coffee-container__content-mune">
+                            <div class="coffee__perfect_coffee-container__content-mune__title">
+                                <h3>Classic Latte</h3>
+                                <h5>1/3 hots milk , 2/3 coffee </h5>
+                            </div>
+                            <p>S2</p>
+                        </div>
+                        <div class="coffee__perfect_coffee-container__content-mune">
+                            <div class="coffee__perfect_coffee-container__content-mune__title">
+                                <h3>Americano</h3>
+                                <h5>1/3 hots milk , 2/3 espresso </h5>
+                            </div>
+                            <p>S2</p>
+                        </div>
+                        <div class="coffee__perfect_coffee-container__content-mune">
+                            <div class="coffee__perfect_coffee-container__content-mune__title">
+                                <h3>Flat White</h3>
+                                <h5>1/3 hots milk , 2/3 espresso </h5>
+                            </div>
+                            <p>S4</p>
+                        </div>
+                        <div class="coffee__perfect_coffee-container__content-mune">
+                            <div class="coffee__perfect_coffee-container__content-mune__title">
+                                <h3>Cappuccino</h3>
+                                <h5>1/3 hots milk , 2/3 espresso </h5>
+                            </div>
+                            <p>S3</p>
+                        </div>
+                        <div class="coffee__perfect_coffee-container__content-mune">
+                            <div class="coffee__perfect_coffee-container__content-mune__title">
+                                <h3>Frappe</h3>
+                                <h5>1/2 milk 1/2 espresso , caramel</h5>
+                            </div>
+                            <p>S4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coffee__perfect_coffee-details">
+                <div>
+                    <h1>200+</h1>
+                    <p>Clients Every Day</p>
+                </div>
+                <div>
+                    <h1>180+</h1>
+                    <p>Coffee Moments</p>
+                </div>
+                <div>
+                    <h1>350+</h1>
+                    <p>Cups of Coffee Daily</p>
+                </div>
+                <div>
+                    <h1>20+</h1>
+                    <p>Type of Coffee</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="coffee__clientreviews">
+           
+            <div class="coffee__clientreviews-slide">
+                <div class="coffee__clientreviews-container">
+                    <div class="coffee__clientreviews-container_cover">
+                        <img src="image/coffee 23.jpg" alt="clientreviews-cover">
+                    </div>
+                    <div class="coffee__clientreviews-container_content">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="54px" viewBox="0 -960 960 960" width="54px" fill="#dbac47e5" transform="scale(-1, -1)"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM320-500q25 0 42.5-17.5T380-560q0-25-17.5-42.5T320-620q-25 0-42.5 17.5T260-560q0 25 17.5 42.5T320-500Zm360 0q25 0 42.5-17.5T740-560q0-25-17.5-42.5T680-620q-25 0-42.5 17.5T620-560q0 25 17.5 42.5T680-500Zm0-60Zm-360 0Z"/></svg>
+                        <p>"Because a restaurant's story is never complete, there is always something new and 
+                            wonderful to discover. An evening spent at MS Coffee is like boarding a golden ship
+                        sailing through a Parisian night."</p>
+                        <div class="coffee__clientreviews-container_content-account">
+                            <h3>Koroashi No Sif</h3>
+                            <p>Client of MS Coffee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="coffee__clientreviews-container">
+                    <div class="coffee__clientreviews-container_cover">
+                        <img src="image/coffee 22.jpg" alt="clientreviews-cover">
+                    </div>
+                    <div class="coffee__clientreviews-container_content">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="54px" viewBox="0 -960 960 960" width="54px" fill="#dbac47e5" transform="scale(-1, -1)"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM320-500q25 0 42.5-17.5T380-560q0-25-17.5-42.5T320-620q-25 0-42.5 17.5T260-560q0 25 17.5 42.5T320-500Zm360 0q25 0 42.5-17.5T740-560q0-25-17.5-42.5T680-620q-25 0-42.5 17.5T620-560q0 25 17.5 42.5T680-500Zm0-60Zm-360 0Z"/></svg>
+                        <p>"Because a restaurant's story is never complete, there is always something new and 
+                            wonderful to discover. An evening spent at MS Coffee is like boarding a golden ship
+                        sailing through a Parisian night."</p>
+                        <div class="coffee__clientreviews-container_content-account">
+                            <h3>Koroashi No Sif</h3>
+                            <p>Client of MS Coffee</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="coffee__clientreviews-container">
+                        <div class="coffee__clientreviews-container_cover">
+                            <img src="image/coffee 3.jpg" alt="clientreviews-cover">
+                        </div>
+                        <div class="coffee__clientreviews-container_content">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="54px" viewBox="0 -960 960 960" width="54px" fill="#dbac47e5" transform="scale(-1, -1)"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92ZM320-500q25 0 42.5-17.5T380-560q0-25-17.5-42.5T320-620q-25 0-42.5 17.5T260-560q0 25 17.5 42.5T320-500Zm360 0q25 0 42.5-17.5T740-560q0-25-17.5-42.5T680-620q-25 0-42.5 17.5T620-560q0 25 17.5 42.5T680-500Zm0-60Zm-360 0Z"/></svg>
+                             <p>"Because a restaurant's story is never complete, there is always something new and 
+                                wonderful to discover. An evening spent at MS Coffee is like boarding a golden ship
+                            sailing through a Parisian night."</p> 
+                            <div class="coffee__clientreviews-container_content-account">
+                                <h3>Koroashi No Sif</h3>
+                                <p>Client of MS Coffee</p>
+                            </div>   
+                        </div>
+                        </div>
+                        <div class="coffee__clientreviews-dots">
+                            <span class="coffee__clientreviews-dots_dot" onclick=currentSlide(1) ></span>
+                            <span class="coffee__clientreviews-dots_dot" onclick=currentSlide(2) ></span>
+                            <span class="coffee__clientreviews-dots_dot" onclick=currentSlide(3) ></span>
+                        </div>
+                    </div>
+        </div>
+        <div class="coffee__ourblog section__pedding">
+            <div class="coffee__ourblog-header">
+                <h3>OUR BLOG</h3>
+                <h1>Be First Who Read News</h1>
+            </div>
+            <div class="coffee__ourblog-grid">
+                <div class="coffee__ourblog-grid__container">
+                    <div class="coffee__ourblog-grid__container-cover">
+                        <img src="image/coffee 21.jpg" alt="-">
+                    </div>
+                    <div class="coffee__ourblog-grid__container-content">
+                        <h3>A Stunning Classic Shaker Kitchen In Halesowen</h3>
+                        <div class="coffee__ourblog-grid__container-content__detail">
+                            <h5> <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#dbac47e5"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                12 Dec 2024</h5>
+                            <p>by Admin</p>   
+                        </div>
+                        <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                            orci venenatis viverra suspendisse.</p>
+                        <h4>READ MORE</h4> 
+                    </div>
+                </div>
+    
+                <div class="coffee__ourblog-grid__container">
+                    <div class="coffee__ourblog-grid__container-cover">
+                        <img src="image/coffee 26.jpg" alt="-">
+                    </div>
+                    <div class="coffee__ourblog-grid__container-content">
+                        <h3>A Stunning Classic Shaker Kitchen In Halesowen</h3>
+                        <div class="coffee__ourblog-grid__container-content__detail">
+                            <h5> <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#dbac47e5"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                12 Dec 2024</h5>
+                            <p>by Admin</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                            orci venenatis viverra suspendisse.</p>
+                          
+                        <h4>READ MORE</h4> 
+                    </div>
+                </div>
+    
+                <div class="coffee__ourblog-grid__container">
+                    <div class="coffee__ourblog-grid__container-cover">
+                        <img src="image/coffee 17.jpg" alt="-">
+                    </div>
+                    <div class="coffee__ourblog-grid__container-content">
+                        <h3>A Stunning Classic Shaker Kitchen In Halesowen</h3>
+                        <div class="coffee__ourblog-grid__container-content__detail">
+                            <h5> <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#dbac47e5"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                12 Dec 2024</h5>
+                            <p>by Admin</p> 
+                        </div>
+                        <p>Lorem ipsum dolor sit amet , consectetur adispiscing elit. Massa nunc , risus euismod
+                            orci venenatis viverra suspendisse.</p>
+                        <h4>READ MORE</h4> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <div class="coffee__footer">
+            <div class="coffee__footer-workingtime">
+                <div class="coffee__footer-workingtime-book-a-table">
+                    <div class="coffee__footer-workingtime-book-a-table__cover">
+                        <img src="image/coffee 20.jpg" alt="">
+                    </div>
+                    <div class="coffee__footer-workingtime-book-a-table__content">
+                        <h1>Working Hours</h1>
+                        <p>Mon -Fre , 9:00 am - 10:00 pm</p>
+                        <button type='button'   >
+                            GET A COFFEE
+                        </button>
+                    </div>
+                </div>
+                <div class="coffee__footer-workingtime-book-a-table">
+                    <div class="coffee__footer-workingtime-book-a-table__cover">
+                        <img src="image/coffee 23.jpg" alt="">
+                    </div>
+                    <div class="coffee__footer-workingtime-book-a-table__content">
+                        <h1>Need a Table?</h1>
+                        <p>+213798347499 or</p>
+                        <button type='button'   >
+                            Book A Table 
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="coffee__footer-links">
+                    <div class="coffee__footer-links_logo_div">
+                        <h4>Contect</h4>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                         5 DUCE , 75015 Paris</p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                            +213798347499 </p>
+                        <p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480v58q0 59-40.5 100.5T740-280q-35 0-66-15t-52-43q-29 29-65.5 43.5T480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480v58q0 26 17 44t43 18q26 0 43-18t17-44v-58q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93h200v80H480Zm0-280q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/></svg>
+                        koroashinosif@gmail.com</p>
+                   </div>
+                   <div class="coffee__footer-links_logo">
+                       <div class="coffee__footer-links_logo-container">
+                           <img src="image/Caffee-logo.png" alt="logo" />
+                           <p>MS Coffee</p>
+                      </div>
+                      <p>Whisper to us about your feelings , and we will prepare ur needs now.</p>
+                      <div class="coffee__footer-links_logo-socialmedia">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i> 
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-tiktok"></i> 
+                        
+                      </div>
+                   </div>
+                  <div class="coffee__footer-links_logo_div">
+                    <h4>Working Hours</h4>
+                    <p><span>Mon - Fre</span> , 7:00am - 6:00pm</p>
+                    <p><span>Set</span> , 7:00am - 6:00pm</p>
+                    <p><span>Sun</span> , 7:00am - 8:00pm</p>
+                  </div>
+                
+                  
+            </div>
+        </div>
+        <div class="coffee__footer-copyright">
+            <p>© 2024 <span>MS Coffee</span> codding by <span>The Mercenary Sif Eddine Aguaguena</span>. All rights reserved.</p>
+          </div>
+    </footer>
+    <script>
+         var review = 1;
+         displayReview(review);
+
+         function showSidebar(){
+            const sidebar = document.querySelector('.coffee__sidebar');
+            sidebar.style.display = 'flex'
+            }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.coffee__sidebar');
+            sidebar.style.display = 'none'
+            }
+            function displayReview(r){
+         var i ; 
+         var rv = document.getElementsByClassName("coffee__clientreviews-container");
+         var dots = document.getElementsByClassName("coffee__clientreviews-dots_dot");
+      
+        
+         if(r > rv.length){
+            review=1;
+         }
+         if(r < 1){
+            review= rv.length;
+         }
+         for(i=0 ; i < rv.length ; i++){
+            rv[i].style.display ="none"
+         }
+         for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+         
+         rv[review - 1].style.display = "flex";
+         dots[review - 1].classList.add("active");
+       
+
+    }
+    function currentSlide(n){
+        displayReview(review = n)
+    }    
+    </script>
+</body>
+</html>
