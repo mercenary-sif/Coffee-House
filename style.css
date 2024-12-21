@@ -587,6 +587,7 @@ header{
     height: 500px;
     margin: 2rem 0;
     background-color: #1f1e1e;
+    
 }
 .coffee__weekend__offers-logo,
 .coffee__weekend__offers-logo-2{
@@ -849,7 +850,7 @@ header{
     background-color: #575351;
 }
 .coffee__perfect_coffee-details{
-    width: 100%;
+    width: 96%;
 }
 .coffee__perfect_coffee-details div{
     flex-direction: column;
@@ -886,8 +887,6 @@ header{
     align-items: center;
     margin: 2rem 0;
     background-color: #080808;
-    
-    background-color: #b6b2af;
 }
 .coffee__clientreviews-slide{
     position: relative;
@@ -1505,6 +1504,9 @@ footer{
      }
      .coffee__perfect_coffee-container__cover img{
         max-height: 250px;
+    }
+    .coffee__clientreviews-dots{
+        width: 200px;
     }
 }
 @media screen and (max-width : 450px){
